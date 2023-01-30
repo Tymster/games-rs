@@ -1,5 +1,6 @@
 mod hangman;
 mod noughts_crosses;
+
 fn main() {
     match std::env::args().nth(1).as_deref() {
         Some("hangman") => hangman::hangman(),
